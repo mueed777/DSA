@@ -1,0 +1,55 @@
+Go in the following order when review: 
+
+1. Arrays ✅
+2. Basic Sorting Algorithms ✅
+3. 2D Arrays ✅
+4. Strings ✅
+5. Bit Manupulation (missing) ❌
+6. Recursion Basics ✅
+7. Divide & Conquer ✅
+8. Backtracking (missing) ❌
+9. ArrayLists ✅
+10. LinkedList ✅
+11. Stacks ⏳
+12. Queues ⏳
+13. Greedy Algorithms (not started) ❌
+14. Binary Trees ✅
+15. Binary Search Trees (BST) ✅
+16. Heaps / Priority Queue (not started) ❌
+17. Hashing ✅
+18. Tries / Trees ✅
+19. Graphs (not started) ❌
+20. DP (not started) ❌
+21. Patterns ✅
+
+
+
+Notes:
+
+Time complexity: O(logn)
+Space complexity: O(1)
+
+Binary search(array[], key) { // cut in half search
+    start = index 0
+    end = index num.length
+
+    while (start <= end) {
+        mid = (start + end) / 2
+        if (array[mid] = key) {
+            return mid
+        } else if (array[mid] > key) { // too big so go left
+            end = mid - 1
+        } else { // too small - array[mid] <= key - so go right
+            start = mid + 1
+        }
+    }
+}
+
+
+DSA question common patterns:
+Heaps (data structure) ❌
+Sliding Window (algorirthm) ✅
+Binary Search (algorithm) ✅
+DFS & BFS (algorithm) *** ❌
+Recursion (algorithm) - backtracking ✅
+Hashmap (data structure) - search, insert, remove ✅
