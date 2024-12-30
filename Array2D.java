@@ -1,4 +1,4 @@
-// Array 2D // testing 1 2 3
+// Array 2D
 
 import java.util.Scanner;
 
